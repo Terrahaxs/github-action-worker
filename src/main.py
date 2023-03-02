@@ -1,9 +1,10 @@
 import os
+import json
 from terrahaxs_worker.worker import worker, Payload
 
 def run():
-    token = os.getenv('TOKEN')
-    worker(Payload(token=token))
+    payload = json.loads(os.getenv('PAYLOAD'))
+    worker(Payload(payload=payload))
 
 if __name__ == '__main__':
     run()
