@@ -1,3 +1,3 @@
-git+https://github.com/terrahaxs/worker.git@print
+git+https://github.com/terrahaxs/worker.git@v0.0.6
 rollbar
 pydantic
