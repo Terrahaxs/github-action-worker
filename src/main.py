@@ -1,11 +1,12 @@
 import os
 import json
-from terrahaxs_worker.worker import worker, Payload
+from terrahaxs_runner.runner import runner
+from terrahaxs_runner.models import Payload
 
 def run():
     payload = json.loads(os.getenv('PAYLOAD'))
     signature = os.getenv('SIGNATURE')
-    worker(Payload(payload=payload), signature)
+    runner(Payload(payload=payload), signature)
 
 if __name__ == '__main__':
     run()
