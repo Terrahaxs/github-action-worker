@@ -1,4 +1,3 @@
-## GitHub Action Terrahaxs Worker
+## GitHub Action Terrahaxs Runner
 
-This repo contains manages the deployment of the GitHub Action Terrahaxs Worker.
-The worker expects the payload to be set as an environment variable `TOKEN`.
+This repo contains manages the deployment of the GitHub Action Terrahaxs Runner.
